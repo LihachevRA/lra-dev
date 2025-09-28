@@ -42,13 +42,8 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: ./_site
-      - shell: bash
-        run: |
-          ls -ln
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          name: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
