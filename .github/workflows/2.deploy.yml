@@ -41,6 +41,7 @@ jobs:
           name: build
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /_site
       - shell: bash
         run: |
           ls -ln
