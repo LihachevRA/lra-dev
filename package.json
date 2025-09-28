@@ -1,0 +1,19 @@
+{
+  "name": "l-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./dist",
+    "build": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "pug": "^3.0.3",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
