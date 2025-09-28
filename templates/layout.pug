@@ -3,6 +3,8 @@ html
   head
     block title
 
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet")
@@ -10,7 +12,7 @@ html
 
     link(rel="stylesheet" href="./assets/main.css")
     script(src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4") 
-  body
+  body(class="bg-gradient-to-b from-gray-50 to-white")
     include components/header.pug
 
     block content
